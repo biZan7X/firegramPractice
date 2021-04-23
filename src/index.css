@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 
 :root {
-	--primary: #efb6b2;
+	--primary: #38cc77;
 	--secondary: #4e4e4e;
 	--error: #ff4a4a;
 }
 
 /* base styles & title */
 body {
-	font-family: "Noto Serif";
+	font-family: "Poppins", sans-serif;
 	color: var(--secondary);
+	transition: all 1s ease;
 }
 .App {
 	max-width: 960px;
@@ -86,6 +87,7 @@ label:hover {
 	/* padding controls height, will always be perfectly square regardless of width */
 	position: relative;
 	opacity: 0.8;
+	border-radius: 1rem;
 }
 .img-wrap img {
 	min-width: 100%;
@@ -112,4 +114,27 @@ label:hover {
 	margin: 60px auto;
 	box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
 	border: 3px solid white;
+}
+
+/* dark mode button */
+.button-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.dark-mode {
+	border: var(--primary) solid 2px;
+	border-radius: 1rem;
+	background: none;
+	padding: 0.75rem 1.25rem;
+	cursor: pointer;
+	color: var(--secondary);
+}
+
+.dark-mode:hover {
+	background-color: #0d1117;
+	color: var(--primary);
 }
